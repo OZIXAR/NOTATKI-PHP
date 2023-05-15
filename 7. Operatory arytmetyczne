@@ -1,4 +1,4 @@
-PHP oferuje wiele operatorów matematycznych, które umożliwiają wykonywanie różnych operacji arytmetycznych.
+PHP oferuje wiele operatorów arytmetycznych, które umożliwiają wykonywanie różnych operacji arytmetycznych.
 
 1. Operator dodawania (+):
    Operator dodawania służy do dodawania dwóch wartości. Na przykład:
