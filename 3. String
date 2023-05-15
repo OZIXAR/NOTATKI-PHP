@@ -8,7 +8,7 @@ $witaj = 'Witaj, świecie!';
 
 
 Łączenie stringów:
-Użyj operatora kropki (.) do połączenia (skonkatenowania) dwóch stringów. Na przykład:
+Użyj operatora konkatenacji (.) do połączenia (skonkatenowania) dwóch stringów. Na przykład:
 
 <?php
 $imie = "Jan";
