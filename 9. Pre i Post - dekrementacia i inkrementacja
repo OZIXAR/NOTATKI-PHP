@@ -1,0 +1,35 @@
+1. Postinkrementacja (`$zmienna++`):
+Postinkrementacja zwiększa wartość zmiennej o 1 po wykonaniu operacji. Przykład:
+
+```php
+$liczba = 5;
+echo $liczba++; // Wyświetli 5
+echo $liczba;   // Wyświetli 6
+```
+
+2. Preinkrementacja (`++$zmienna`):
+Preinkrementacja zwiększa wartość zmiennej o 1 przed wykonaniem operacji. Przykład:
+
+```php
+$liczba = 5;
+echo ++$liczba; // Wyświetli 6
+echo $liczba;   // Wyświetli 6
+```
+
+3. Postdekrementacja (`$zmienna--`):
+Postdekrementacja zmniejsza wartość zmiennej o 1 po wykonaniu operacji. Przykład:
+
+```php
+$liczba = 5;
+echo $liczba--; // Wyświetli 5
+echo $liczba;   // Wyświetli 4
+```
+
+4. Predekrementacja (`--$zmienna`):
+Predekrementacja zmniejsza wartość zmiennej o 1 przed wykonaniem operacji. Przykład:
+
+```php
+$liczba = 5;
+echo --$liczba; // Wyświetli 4
+echo $liczba;   // Wyświetli 4
+```
