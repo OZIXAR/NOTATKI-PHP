@@ -1,0 +1,42 @@
+
+W PHP stałe są nazwanymi wartościami, które nie mogą być zmieniane w trakcie działania programu.
+
+1. Definiowanie stałych:
+   Aby zdefiniować stałą w PHP, użyj funkcji define(). Stałe mają dwie główne składowe: nazwę i wartość. Na przykład:
+   ```php
+   define("PI", 3.14);
+   define("WITAJ", "Witaj, świecie!");
+   ```
+
+2. Konwencje nazewnicze stałych:
+   W PHP przyjęło się, że nazwy stałych pisze się dużymi literami i używa się podkreślnika jako separatora. Na przykład:
+   - PI
+   - MAX_WARTOSC
+   - KATALOG_GLOWNY
+
+3. Korzystanie ze stałych:
+   Stałe można używać w całym kodzie PHP. Aby uzyskać wartość stałej, wystarczy użyć jej nazwy. Na przykład:
+   ```php
+   echo PI;  // Wyświetli wartość 3.14
+   echo WITAJ;  // Wyświetli "Witaj, świecie!"
+   ```
+
+4. Różnica między stałą a zmienną:
+   - Stałe są niezmiennymi wartościami, które nie mogą być zmieniane po zdefiniowaniu, podczas gdy zmienne mogą mieć zmienne wartości w trakcie działania programu.
+   - Stałe są globalne w zakresie, co oznacza, że można ich używać w dowolnym miejscu w kodzie, podczas gdy zmienne mają zakres zależny od miejsca, w którym są zdefiniowane.
+   - Stałe nie muszą być poprzedzone znakiem dolara ($), podczas gdy zmienne muszą mieć ten znak przed nazwą.
+   - Stałe są definiowane przy użyciu funkcji define(), a zmienne są tworzone przy użyciu operatora przypisania (=).
+
+5. Użycie stałych w praktyce:
+   Stałe są przydatne w sytuacjach, gdy chcemy zdefiniować wartość, która nie będzie się zmieniać i będzie dostępna w całym kodzie. Na przykład, można użyć stałej do przechowywania wartości podatkowej, ścieżki do plików lub nazw kategorii.
+
+   ```php
+   define("STAWKA_PODATKOWA", 0.23);
+
+   $cena = 100;
+   $podatek = $cena * STAWKA_PODATKOWA;
+   $cenaBrutto = $cena + $podatek;
+   echo $cenaBrutto;
+   ```
+
+   W tym przykładzie, wartość stawki podatkowej jest zdefiniowana jako stała i używana do obliczenia ceny brutto.
