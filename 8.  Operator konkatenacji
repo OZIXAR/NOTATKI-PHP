@@ -1,0 +1,27 @@
+Operator konkatenacji w PHP jest używany do łączenia dwóch ciągów znaków w jeden. W języku PHP operator konkatenacji to kropka (".").
+
+Oto kilka przykładów, które ilustrują zastosowanie operatora konkatenacji:
+
+```php
+// Przykład 1: Łączenie dwóch ciągów znaków
+$imie = "Jan";
+$nazwisko = "Kowalski";
+$pelneNazwisko = $imie . " " . $nazwisko;
+echo $pelneNazwisko; // Wyświetli "Jan Kowalski"
+
+// Przykład 2: Łączenie ciągów znaków z innymi wartościami
+$ilosc = 10;
+$wiadomosc = "Ilość produktów: " . $ilosc;
+echo $wiadomosc; // Wyświetli "Ilość produktów: 10"
+
+// Przykład 3: Łączenie ciągów znaków w pętli
+$liczby = "";
+for ($i = 1; $i <= 5; $i++) {
+    $liczby .= $i . ", "; // Dodajemy kolejne liczby do ciągu
+}
+echo $liczby; // Wyświetli "1, 2, 3, 4, 5, "
+```
+
+W powyższych przykładach operator konkatenacji został użyty do łączenia ciągów znaków. Możesz używać go również w kombinacji z innymi wartościami, takimi jak liczby czy zmienne.
+
+Ważne jest, aby pamiętać o dodawaniu odpowiednich separatorów (na przykład spacji, przecinków itp.) między ciągami znaków, jeśli są one wymagane w ostatecznym wyniku.
