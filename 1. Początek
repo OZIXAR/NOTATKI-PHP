@@ -1,6 +1,7 @@
 PHP (Hypertext Preprocessor) jest popularnym językiem programowania stosowanym w tworzeniu stron internetowych. Jeśli jesteś początkującym programistą i chcesz napisać swój pierwszy kod w PHP, to ten poradnik jest dla Ciebie. Oto kilka kroków, które pomogą Ci zacząć:
 
 Krok 1: Zainstaluj serwer lokalny
+https://www.youtube.com/watch?v=eOEFYoWaGb4
 Aby uruchomić kod PHP, musisz mieć zainstalowany serwer lokalny na swoim komputerze. Możesz użyć popularnych pakietów takich jak XAMPP, WAMP lub MAMP, które zawierają Apache (serwer HTTP), PHP i MySQL (bazy danych). Pobierz i zainstaluj odpowiedni pakiet dla swojego systemu operacyjnego.
 
 Krok 2: Uruchom serwer lokalny
