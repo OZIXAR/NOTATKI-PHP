@@ -5,50 +5,51 @@ Poradnik o typach wartości w PHP
 1. Integer (liczby całkowite):
    Integer to typ danych używany do przechowywania liczb całkowitych (bez części dziesiętnej). Może to być dodatnia liczba, ujemna lub zero. Na przykład:
    
-   ```php
+   <?php
    $wiek = 25;
-   ```
+   ?>
 
 2. Float (liczby zmiennoprzecinkowe):
    Float to typ danych używany do przechowywania liczb zmiennoprzecinkowych (z częścią dziesiętną). Na przykład:
    
-   ```php
+   <?php
    $pi = 3.14;
-   ```
+  ?>
 
 3. String (łańcuchy znaków):
    String to typ danych używany do przechowywania tekstu. Może być zapisany w pojedynczych lub podwójnych cudzysłowach. Na przykład:
    
-   ```php
+    <?php
    $imie = "Jan";
-   ```
+  ?>
 
 4. Boolean (wartości logiczne):
    Boolean to typ danych, który może przyjąć jedną z dwóch wartości: true (prawda) lub false (fałsz). Służy do reprezentowania stanu logicznego. Na przykład:
    
-   ```php
+    <?php
    $czyPrawda = true;
    $czyFałsz = false;
-   ```
+  ?>
 
 5. Array (tablice):
    Tablica to struktura danych, która przechowuje wiele wartości w jednej zmiennej. Może zawierać różne typy wartości i jest indeksowana numerycznie lub za pomocą kluczy. Na przykład:
    
-   ```php
+   <?php
    $numery = array(1, 2, 3, 4, 5);
    $osoba = array("imie" => "Jan", "nazwisko" => "Kowalski", "wiek" => 25);
-   ```
+   ?>
 
 6. Null (brak wartości):
    Null to specjalna wartość, która oznacza brak wartości. Może być przypisana do zmiennej, gdy nie ma innej wartości. Na przykład:
    
-   ```php
+    <?php
    $zmienna = null;
-   ```
+   ?>
 
 7. Object (obiekty):
    Obiekty to instancje klas w PHP. Są bardziej zaawansowanym typem danych, które przechowują zarówno właściwości (zmienne) jak i metody (funkcje). Na przykład:
-   ```php
+   
+    <?php
    class Osoba {
      public $imie;
      public $wiek;
@@ -56,3 +57,4 @@ Poradnik o typach wartości w PHP
    $osoba = new Osoba();
    $osoba->imie = "Jan";
    $osoba->wiek = 25;
+?>
