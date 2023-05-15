@@ -58,3 +58,46 @@ Poradnik o typach wartości w PHP
    $osoba->imie = "Jan";
    $osoba->wiek = 25;
 ?>
+
+Czasami konieczne jest sprawdzenie typu zmiennej w PHP. Do tego celu można użyć funkcji var_dump(), która wyświetla informacje o typie i wartości danej zmiennej. Oto jak używać funkcji var_dump():
+
+Wykorzystanie funkcji var_dump():
+Aby sprawdzić typ zmiennej, użyj funkcji var_dump() i przekaż zmienną jako argument. Funkcja ta zwróci informacje o typie i wartości zmiennej. Na przykład:
+
+php
+Copy code
+$imie = "Jan";
+var_dump($imie);
+Wynik:
+
+c
+Copy code
+string(3) "Jan"
+Interpretacja wyniku:
+Wynik funkcji var_dump() składa się z kilku elementów. Pierwszy element to nazwa typu danych (np. string, integer). Następnie w nawiasach podane jest również dodatkowe info, takie jak długość stringa lub liczba bajtów dla innych typów. Na końcu wyświetlana jest wartość zmiennej.
+
+Sprawdzanie typu zmiennej:
+Aby sprawdzić typ zmiennej, spójrz na pierwszą część wyniku var_dump(). Na przykład, w przypadku zmiennej $imie, wyświetli się "string", co oznacza, że jest to zmienna typu string.
+
+Sprawdzanie wartości zmiennej:
+Wartość zmiennej jest wyświetlana na końcu wyniku var_dump(). Na przykład, dla zmiennej $imie, wartość to "Jan".
+
+Sprawdzanie typu złożonych struktur danych:
+Funkcja var_dump() jest również przydatna do sprawdzania typów w przypadku bardziej złożonych struktur danych, takich jak tablice i obiekty. Na przykład:
+
+php
+Copy code
+$liczby = array(1, 2, 3);
+var_dump($liczby);
+Wynik:
+
+scss
+Copy code
+array(3) {
+  [0]=> int(1)
+  [1]=> int(2)
+  [2]=> int(3)
+}
+W tym przypadku, var_dump() wyświetla informacje o typie (array) oraz wartościach elementów tablicy.
+
+Dzięki funkcji var_dump() można łatwo i szybko sprawdzić typy zmiennych w PHP oraz zrozumieć ich wartości. Jest to przydatne narzędzie podczas debugowania i analizowania kodu. Pamiętaj, że var_dump() jest głównie używany w celach developerskich i powinien być usunięty lub wyłączony w kodzie produkcyjnym, aby nie wyświetlać niepożądanych informacji.
