@@ -1,0 +1,60 @@
+W PHP operator przypisania służy do przypisywania wartości do zmiennych.
+
+1. Operator przypisania (=):
+   Operator przypisania (=) służy do przypisania wartości do zmiennej. Na przykład:
+   ```php
+   $x = 5;
+   ```
+
+   Powyższy kod przypisuje wartość 5 do zmiennej $x.
+
+2. Inne operatory przypisania:
+   W PHP istnieje kilka innych operatorów przypisania, które pozwalają wykonywać operacje arytmetyczne i przypisywać wynik do zmiennej. Oto kilka przykładów:
+
+   - Operator przypisania z dodawaniem (+=):
+     ```php
+     $x += 2;  // To samo co: $x = $x + 2;
+     ```
+
+   - Operator przypisania z odejmowaniem (-=):
+     ```php
+     $x -= 3;  // To samo co: $x = $x - 3;
+     ```
+
+   - Operator przypisania z mnożeniem (*=):
+     ```php
+     $x *= 4;  // To samo co: $x = $x * 4;
+     ```
+
+   - Operator przypisania z dzieleniem (/=):
+     ```php
+     $x /= 2;  // To samo co: $x = $x / 2;
+     ```
+
+   - Operator przypisania z resztą z dzielenia (%=):
+     ```php
+     $x %= 2;  // To samo co: $x = $x % 2;
+     ```
+
+   - Operator przypisania z konkatenacją (.=):
+     ```php
+     $imie = "Jan";
+     $imie .= " Kowalski";  // To samo co: $imie = $imie . " Kowalski";
+     ```
+
+3. Wykorzystanie operatorów przypisania w praktyce:
+   Operatorzy przypisania są przydatne, gdy chcemy zmieniać wartość zmiennej na podstawie jej obecnej wartości lub wykonywać proste operacje arytmetyczne i konkatenację. Przykładowo:
+
+   ```php
+   $liczba = 10;
+   $liczba += 5;  // Zwiększenie wartości zmiennej o 5
+   echo $liczba;  // Wyświetli 15
+
+   $tekst = "Witaj";
+   $tekst .= ", świecie!";  // Dodanie tekstu do istniejącego
+   echo $tekst;  // Wyświetli "Witaj, świecie!"
+   ```
+
+   W powyższym przykładzie użyto operatora przypisania z dodawaniem (+=) i operatora przypisania z konkatenacją (.=).
+
+Operatorzy przypisania są przydatne do manipulowania wartościami zmiennych w PHP. Pozwalają na wygodne wykonanie operacji przypisania i obliczeń w jednym kroku.
