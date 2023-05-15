@@ -1,0 +1,46 @@
+Oto prosty poradnik dotyczący operatorów logicznych w języku PHP:
+
+Operatorzy logiczne służą do wykonywania operacji logicznych na wartościach logicznych (true/false) i zwracają wynik również jako wartość logiczną. Oto kilka przykładów operatorów logicznych:
+
+1. Operator logiczny AND (`&&` lub `and`):
+Operator AND zwraca wartość true tylko wtedy, gdy oba porównywane wyrażenia są prawdziwe. W przeciwnym razie zwraca wartość false. Przykład:
+
+```php
+$a = true;
+$b = false;
+
+echo ($a && $b); // false
+```
+
+2. Operator logiczny OR (`||` lub `or`):
+Operator OR zwraca wartość true, jeśli przynajmniej jedno z porównywanych wyrażeń jest prawdziwe. Jeśli oba wyrażenia są fałszywe, zwraca wartość false. Przykład:
+
+```php
+$a = true;
+$b = false;
+
+echo ($a || $b); // true
+```
+
+3. Operator logiczny NOT (`!`):
+Operator NOT odwraca wartość logiczną wyrażenia. Jeśli wyrażenie jest prawdziwe, zwraca wartość false, a jeśli jest fałszywe, zwraca wartość true. Przykład:
+
+```php
+$a = true;
+
+echo !$a; // false
+```
+
+4. Operator logiczny XOR (`xor`):
+Operator XOR (Exclusive OR) zwraca wartość true, jeśli jedno z porównywanych wyrażeń jest prawdziwe, a drugie fałszywe. Jeśli oba wyrażenia są prawdziwe lub fałszywe, zwraca wartość false. Przykład:
+
+```php
+$a = true;
+$b = false;
+
+echo ($a xor $b); // true
+```
+
+Operatorzy logiczne są przydatne do tworzenia warunków logicznych, podejmowania decyzji i kontrolowania przebiegu programu na podstawie wartości logicznych.
+
+Pamiętaj, że w przypadku operatorów logicznych, wartość "true" jest interpretowana jako 1, a wartość "false" jako 0. Jednak operatory logiczne zwracają wartość logiczną (true/false), niekoniecznie liczbę.
