@@ -1,0 +1,53 @@
+PHP oferuje wiele operatorów matematycznych, które umożliwiają wykonywanie różnych operacji arytmetycznych.
+
+1. Operator dodawania (+):
+   Operator dodawania służy do dodawania dwóch wartości. Na przykład:
+   ```php
+   $x = 5 + 3;  // x będzie miało wartość 8
+   ```
+
+2. Operator odejmowania (-):
+   Operator odejmowania służy do odejmowania jednej wartości od drugiej. Na przykład:
+   ```php
+   $x = 7 - 2;  // x będzie miało wartość 5
+   ```
+
+3. Operator mnożenia (*):
+   Operator mnożenia służy do mnożenia dwóch wartości. Na przykład:
+   ```php
+   $x = 4 * 2;  // x będzie miało wartość 8
+   ```
+
+4. Operator dzielenia (/):
+   Operator dzielenia służy do dzielenia jednej wartości przez drugą. Na przykład:
+   ```php
+   $x = 10 / 2;  // x będzie miało wartość 5
+   ```
+
+5. Operator reszty z dzielenia (%):
+   Operator reszty z dzielenia zwraca resztę z dzielenia dwóch wartości. Na przykład:
+   ```php
+   $x = 10 % 3;  // x będzie miało wartość 1
+   ```
+
+6. Operator potęgowania (**):
+   Operator potęgowania podnosi jedną wartość do potęgi drugiej. Na przykład:
+   ```php
+   $x = 2 ** 3;  // x będzie miało wartość 8
+   ```
+
+7. Kolejność wykonywania operacji:
+   W PHP obowiązuje kolejność wykonywania operacji zgodna z regułami matematycznymi. Można ją kontrolować za pomocą nawiasów. Na przykład:
+   ```php
+   $x = (4 + 2) * 3;  // x będzie miało wartość 18 (pierw dodawanie, potem mnożenie)
+   ```
+
+8. Skrócone zapisy operacji arytmetycznych:
+   W PHP istnieją również skrócone zapisy dla operacji arytmetycznych, które pozwalają na wykonywanie operacji i przypisywanie wyniku do zmiennej w jednym kroku. Na przykład:
+   ```php
+   $x = 5;
+   $x += 3;  // Zwiększenie wartości x o 3 (x = x + 3)
+   echo $x;  // Wyświetli 8
+   ```
+
+   Inne skrócone zapisy to: -= (odejmowanie i przypisanie), *= (mnożenie i przypisanie), /= (dzielenie i przypisanie), %= (reszta z dzielenia i przypisanie).
