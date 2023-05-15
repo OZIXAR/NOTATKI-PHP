@@ -1,1 +1,15 @@
+PHP (Hypertext Preprocessor) to popularny język skryptowy, który został specjalnie zaprojektowany do tworzenia stron internetowych. Jest to język interpretowany, co oznacza, że kod PHP jest wykonywany na serwerze, a wynik jest przesyłany do przeglądarki internetowej użytkownika.
 
+Główne zastosowania PHP to:
+
+1. Tworzenie stron internetowych: PHP umożliwia generowanie dynamicznych stron internetowych. Możesz użyć go do łączenia się z bazami danych, przetwarzania formularzy, manipulacji danymi i generowania dynamicznych treści na stronach.
+
+2. Zarządzanie sesjami i cookies: PHP zapewnia mechanizmy do zarządzania sesjami użytkowników na stronie internetowej. Można używać sesji do przechowywania informacji o stanie użytkownika, np. danych logowania, koszyka zakupów itp. Również obsługa cookies jest możliwa w PHP, co pozwala na przechowywanie danych na komputerze użytkownika.
+
+3. Przetwarzanie danych formularzy: PHP jest często stosowany do przetwarzania danych wysłanych przez formularze na stronach internetowych. Możesz pobierać dane wprowadzone przez użytkowników, sprawdzać poprawność wprowadzonych informacji, wysyłać wiadomości e-mail, dodawać wpisy do bazy danych i wiele więcej.
+
+4. Komunikacja z bazami danych: PHP umożliwia łatwe łączenie się z różnymi bazami danych, takimi jak MySQL, PostgreSQL, SQLite i inne. Możesz wykonywać zapytania SQL, pobierać dane, dodawać, aktualizować i usuwać rekordy w bazie danych.
+
+5. Tworzenie API: PHP może być używany do tworzenia interfejsów programistycznych aplikacji (API). Możesz budować API, które umożliwiają innym aplikacjom komunikację z Twoją aplikacją, pobieranie i przetwarzanie danych, wykonywanie określonych działań i wiele więcej.
+
+PHP jest popularnym wyborem dla twórców stron internetowych, ponieważ jest łatwy do nauki, ma szerokie wsparcie społeczności, dużą liczbę dostępnych bibliotek i frameworków, oraz jest kompatybilny z różnymi systemami operacyjnymi i serwerami.
