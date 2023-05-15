@@ -1,0 +1,24 @@
+PHP (Hypertext Preprocessor) jest popularnym językiem programowania stosowanym w tworzeniu stron internetowych. Jeśli jesteś początkującym programistą i chcesz napisać swój pierwszy kod w PHP, to ten poradnik jest dla Ciebie. Oto kilka kroków, które pomogą Ci zacząć:
+
+Krok 1: Zainstaluj serwer lokalny
+Aby uruchomić kod PHP, musisz mieć zainstalowany serwer lokalny na swoim komputerze. Możesz użyć popularnych pakietów takich jak XAMPP, WAMP lub MAMP, które zawierają Apache (serwer HTTP), PHP i MySQL (bazy danych). Pobierz i zainstaluj odpowiedni pakiet dla swojego systemu operacyjnego.
+
+Krok 2: Uruchom serwer lokalny
+Po zainstalowaniu pakietu serwera lokalnego, uruchom go i upewnij się, że serwer Apache i PHP działają poprawnie. Zwykle będziesz miał ikonę serwera w zasobniku systemowym, gdzie możesz kontrolować stan serwera.
+
+Krok 3: Stwórz nowy plik PHP
+Otwórz edytor tekstowy lub środowisko programistyczne (IDE) i stwórz nowy plik o rozszerzeniu .php. Możesz nazwać plik dowolnie, na przykład "index.php", ponieważ tak nazywa się domyślny plik w danym projekcie.
+
+Krok 4: Napisz swój pierwszy kod PHP
+W pliku "index.php" możesz napisać swój pierwszy kod PHP. Poniżej znajduje się prosty przykład, który wyświetli napis "Hello, World!" na stronie:
+
+<?php
+  echo "Hello, World!";
+?>
+
+Kod PHP powinien zawsze być umieszczony między znacznikami <?php i ?>. W tym przypadku używamy funkcji echo do wyświetlenia napisu "Hello, World!".
+
+Krok 5: Uruchom swój kod
+Aby uruchomić swój kod PHP, skopiuj plik "index.php" do folderu, w którym jest zainstalowany serwer lokalny. Przejdź do przeglądarki internetowej i wpisz w pasek adresu: "http://localhost/hello.php". Powinieneś zobaczyć napis "Hello, World!" wyświetlony na stronie.
+
+Gratulacje! Napisałeś swój pierwszy kod w PHP. Teraz możesz eksperymentować dalej, poznając kolejne funkcje i konstrukcje języka PHP. Pamiętaj, że istnieje wiele zasobów online, takich jak dokumentacja PHP, tutoriale i fora, które mogą pomóc Ci rozwijać swoje umiejętności w programowaniu w PHP.
