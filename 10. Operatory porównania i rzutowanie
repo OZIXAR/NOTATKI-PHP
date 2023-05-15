@@ -1,0 +1,63 @@
+Oto prosty poradnik dotyczący operatorów porównania i rzutowania w języku PHP:
+
+1. Operator porównania:
+Operator porównania służy do porównywania wartości zmiennych i zwraca wartość logiczną (true/false) w zależności od wyniku porównania. Oto kilka przykładów:
+
+```php
+$a = 5;
+$b = 10;
+
+// Operator równości (==)
+echo ($a == $b); // false
+
+// Operator nierówności (!= lub <>)
+echo ($a != $b); // true
+
+// Operator identyczności (===)
+echo ($a === $b); // false
+
+// Operator nierówności identyczności (!==)
+echo ($a !== $b); // true
+
+// Operator większy niż (>)
+echo ($a > $b); // false
+
+// Operator mniejszy niż (<)
+echo ($a < $b); // true
+
+// Operator większy lub równy (>=)
+echo ($a >= $b); // false
+
+// Operator mniejszy lub równy (<=)
+echo ($a <= $b); // true
+```
+
+Operator porównania jest przydatny do porównywania wartości zmiennych i podejmowania decyzji na podstawie wyników porównania.
+
+2. Operator rzutowania:
+Operator rzutowania pozwala na zmianę typu zmiennej. Oto kilka przykładów:
+
+```php
+$liczba = "10";
+$tekst = "5";
+
+// Rzutowanie na liczbę całkowitą (int)
+$wynik = (int)$liczba + (int)$tekst;
+echo $wynik; // 15
+
+// Rzutowanie na liczbę zmiennoprzecinkową (float)
+$wynik = (float)$liczba;
+echo $wynik; // 10.0
+
+// Rzutowanie na łańcuch znaków (string)
+$wynik = (string)$liczba;
+echo $wynik; // "10"
+
+// Rzutowanie na tablicę (array)
+$wynik = (array)$liczba;
+print_r($wynik); // Array([0] => 10)
+
+// Rzutowanie na logiczną wartość (bool)
+$wynik = (bool)$liczba;
+echo $wynik; // true
+```
