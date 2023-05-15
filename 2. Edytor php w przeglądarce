@@ -1,0 +1,20 @@
+Aby uruchomić kod PHP na stronie Replit.com, wykonaj poniższe kroki:
+
+Krok 1: Zarejestruj się i zaloguj
+Przejdź na stronę Replit.com i zarejestruj się, jeśli nie masz jeszcze konta. Po rejestracji zaloguj się do swojego konta.
+
+Krok 2: Utwórz nowy projekt PHP
+Po zalogowaniu się na Replit.com, kliknij przycisk "New repl" lub "Create" (tworzenie nowego projektu). Następnie wybierz język PHP jako język programowania dla swojego projektu.
+
+Krok 3: Napisz swój kod PHP
+W nowo utworzonym projekcie będziesz mieć plik o nazwie "index.php". Możesz edytować ten plik, aby napisać swój kod PHP. Kliknij na nazwę pliku, aby otworzyć go w edytorze.
+
+Krok 4: Uruchom swój kod PHP
+Aby uruchomić swój kod PHP na Replit.com, możesz użyć wbudowanego środowiska uruchomieniowego. Kliknij przycisk "Run" (uruchom), który znajduje się na górnym pasku narzędziowym lub użyj skrótu klawiaturowego "Ctrl + Enter". Replit.com uruchomi serwer PHP i wyświetli wynik Twojego kodu na konsoli lub na zewnętrznej konsoli, jeśli jest skonfigurowana.
+
+Krok 5: Podgląd działania strony
+Replit.com udostępnia również podgląd strony internetowej w przypadku projektów PHP. Aby zobaczyć, jak działa Twój kod PHP w przeglądarce, kliknij na przycisk "Open in new tab" (otwórz w nowej karcie), który znajduje się obok przycisku "Run". Otworzy się nowa karta z podglądem działania Twojej strony internetowej.
+
+To wszystko! Teraz możesz eksperymentować z kodem PHP na Replit.com. Pamiętaj, że możesz tworzyć dodatkowe pliki PHP i importować zewnętrzne pliki PHP, jeśli to konieczne.
+
+Replit.com oferuje również funkcje takie jak przechowywanie kodu źródłowego, udostępnianie projektów innym osobom oraz współpracę zespołową, co może być przydatne podczas nauki i pracy z PHP.
