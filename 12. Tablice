@@ -59,3 +59,74 @@ Podsumowanie:
 - Funkcje tablicowe umożliwiają manipulację danymi w tablicach, zależnie od potrzeb.
 
 Dzięki różnym typom tablic i funkcjom tablicowym PHP oferuje szeroki zakres możliwości manipulacji danymi w tablicach, zgodnie z konkretnymi wymaganiami i strukturą danych.
+
+--Warto wiedzieć:
+Zagnieżdżanie tablic w PHP polega na umieszczaniu jednej tablicy wewnątrz innej tablicy jako jej element. To umożliwia tworzenie struktur danych o bardziej skomplikowanym układzie. Oto kilka przykładów, jak zagnieżdżać tablice:
+
+1. Zagnieżdżanie tablic przy tworzeniu:
+
+```php
+$tablica1 = array(
+    'jabłka',
+    'banany',
+    array('pomarańcze', 'kiwi', 'mandarynki')
+);
+```
+
+W powyższym przykładzie mamy trzy elementy w tablicy `$tablica1`. Trzeci element to tablica, która zawiera trzy owoce. Możemy uzyskać dostęp do tych owoców za pomocą indeksów, na przykład: `$tablica1[2][1]` zwróci 'kiwi'.
+
+2. Dodawanie tablic do istniejących tablic:
+
+```php
+$tablica2 = array('jabłko', 'banan');
+
+$tablica2[] = array('pomarańcza', 'kiwi');
+```
+
+W powyższym przykładzie najpierw tworzymy tablicę `$tablica2` z dwoma owocami. Następnie dodajemy do niej kolejną tablicę, która zawiera dwa owoce. Teraz `$tablica2` jest tablicą zagnieżdżoną, zawierającą jedną tablicę wewnątrz.
+
+3. Zagnieżdżanie tablic wielowymiarowych:
+
+```php
+$tablica3 = array(
+    array('jabłko', 'banan'),
+    array('pomarańcza', 'kiwi')
+);
+```
+
+W powyższym przykładzie mamy tablicę `$tablica3`, która składa się z dwóch tablic, z każdej zawierającej dwa owoce. Możemy uzyskać dostęp do tych owoców za pomocą indeksów, na przykład: `$tablica3[1][0]` zwróci 'pomarańcza'.
+
+Zagnieżdżanie tablic umożliwia tworzenie bardziej złożonych struktur danych, takich jak tablice wielowymiarowe lub struktury danych o różnych poziomach. Można zagnieżdżać tablice dowolną ilość razy, tworząc potrzebną hierarchię i organizację danych.
+
+Funkcja `unset()` w PHP służy do usuwania elementów z tablicy lub zmiennych. Może być używana do usunięcia elementów z tablicy indexowanej, asocjacyjnej lub nawet zagnieżdżonej tablicy. Oto kilka przykładów użycia funkcji `unset()` w tablicach PHP:
+
+1. Usuwanie elementu z tablicy indexowanej:
+```php
+$tablica = array('jabłko', 'banan', 'pomarańcza');
+unset($tablica[1]);
+
+// Po wykonaniu powyższego kodu, element o indeksie 1 ('banan') zostanie usunięty z tablicy.
+```
+
+2. Usuwanie elementu z tablicy asocjacyjnej:
+```php
+$tablica = array('jabłko' => 5, 'banan' => 8, 'pomarańcza' => 3);
+unset($tablica['banan']);
+
+// Po wykonaniu powyższego kodu, element o kluczu 'banan' (o wartości 8) zostanie usunięty z tablicy.
+```
+
+3. Usuwanie elementu z zagnieżdżonej tablicy:
+```php
+$tablica = array(
+    'owoce' => array('jabłko', 'banan', 'pomarańcza'),
+    'kolory' => array('czerwony', 'żółty', 'pomarańczowy')
+);
+unset($tablica['owoce'][1]);
+
+// Po wykonaniu powyższego kodu, element o indeksie 1 ('banan') zostanie usunięty z tablicy zagnieżdżonej.
+```
+
+Funkcja `unset()` usuwa elementy z tablicy, ale nie zmienia numerów indeksów. Jeśli usuniemy element z tablicy indexowanej, numeracja indeksów nie zostanie dostosowana automatycznie. Dlatego po usunięciu elementu z tablicy indexowanej może wystąpić luka w numeracji indeksów.
+
+Ważne jest również zauważyć, że funkcja `unset()` może być używana do usuwania innych zmiennych poza elementami tablic. Może to obejmować zmienne skalarne, obiekty, etc. Przed użyciem funkcji `unset()` warto upewnić się, że korzystamy z niej zgodnie z zamierzeniem i dokładnie rozumiemy, jakie elementy lub zmienne chcemy usunąć z naszego kodu.
