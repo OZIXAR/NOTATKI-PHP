@@ -1,0 +1,61 @@
+1. Tablice indexowane:
+Tablice indexowane są najprostszym typem tablicy w PHP. Elementy w tablicy są indeksowane liczbami, które zaczynają się od zera. Oto przykład tablicy indexowanej:
+
+```php
+$tablica = array('jabłko', 'banan', 'pomarańcza');
+```
+
+W powyższym przykładzie mamy trzy elementy w tablicy: 'jabłko' (indeks 0), 'banan' (indeks 1) i 'pomarańcza' (indeks 2). Możemy uzyskać dostęp do elementów za pomocą indeksów, na przykład: `$tablica[1]` zwróci 'banan'.
+
+Funkcje tablicowe dla tablic indexowanych:
+
+- `count($tablica)` - Zwraca liczbę elementów w tablicy.
+- `array_push($tablica, $element1, $element2, ...)` - Dodaje jedno lub więcej elementów na koniec tablicy.
+- `array_pop($tablica)` - Usuwa i zwraca ostatni element tablicy.
+- `array_merge($tablica1, $tablica2)` - Łączy dwie tablice w jedną.
+- `array_search($element, $tablica)` - Wyszukuje element w tablicy i zwraca indeks, pod którym został znaleziony.
+
+2. Tablice asocjacyjne:
+Tablice asocjacyjne pozwalają przypisywać elementom klucze tekstowe zamiast numerycznych indeksów. Klucze mogą być łańcuchami znaków lub liczbami. Oto przykład tablicy asocjacyjnej:
+
+```php
+$tablica = array('jabłko' => 5, 'banan' => 8, 'pomarańcza' => 3);
+```
+
+W powyższym przykładzie mamy trzy elementy w tablicy, gdzie 'jabłko', 'banan' i 'pomarańcza' są kluczami, a wartości to odpowiednio 5, 8 i 3. Możemy uzyskać dostęp do elementów, używając ich kluczy, na przykład: `$tablica['banan']` zwróci 8.
+
+Funkcje tablicowe dla tablic asocjacyjnych:
+
+- `count($tablica)` - Zwraca liczbę elementów w tablicy.
+- `array_keys($tablica)` - Zwraca tablicę zawierającą wszystkie klucze z tablicy.
+- `array_values($tablica)` - Zwraca tablicę zawierającą wszystkie wartości z tablicy.
+- `array_key_exists($klucz, $tablica)` - Sprawdza, czy klucz istnieje w tablicy.
+- `array_search($wartość, $tablica)` - Wyszukuje wartość w tablicy i zwraca klucz, pod którym zosta
+
+3. Tablice wielowymiarowe:
+Tablice wielowymiarowe są tablicami, które zawierają inne tablice jako swoje elementy. Mogą mieć dowolną liczbę wymiarów. Oto przykład tablicy wielowymiarowej:
+
+```php
+$tablica = array(
+    array('jabłko', 'banan', 'pomarańcza'),
+    array('czerwony', 'żółty', 'pomarańczowy')
+);
+```
+
+W powyższym przykładzie mamy tablicę, która zawiera dwie tablice jako swoje elementy. Pierwsza tablica zawiera owoce: 'jabłko', 'banan' i 'pomarańcza'. Druga tablica zawiera kolory: 'czerwony', 'żółty' i 'pomarańczowy'. Możemy uzyskać dostęp do elementów, korzystając z indeksów wielokrotnych, na przykład: `$tablica[0][1]` zwróci 'banan', a `$tablica[1][2]` zwróci 'pomarańczowy'.
+
+Funkcje tablicowe dla tablic wielowymiarowych:
+
+- `count($tablica, COUNT_RECURSIVE)` - Zwraca liczbę elementów w tablicy, włączając elementy tablic podrzędnych.
+- `array_push($tablica, $element1, $element2, ...)` - Dodaje jedno lub więcej elementów na koniec tablicy podrzędnej.
+- `array_merge($tablica1, $tablica2)` - Łączy dwie tablice wielowymiarowe w jedną.
+- `array_column($tablica, $indeks)` - Zwraca tablicę z wartościami z wybranej kolumny w tablicy wielowymiarowej.
+- `array_walk_recursive($tablica, $funkcja)` - Przechodzi rekurencyjnie przez tablicę i wywołuje podaną funkcję dla każdego elementu.
+
+Podsumowanie:
+- Tablice indexowane są oparte na numerycznych indeksach.
+- Tablice asocjacyjne używają kluczy tekstowych lub liczbowych.
+- Tablice wielowymiarowe zawierają inne tablice jako elementy.
+- Funkcje tablicowe umożliwiają manipulację danymi w tablicach, zależnie od potrzeb.
+
+Dzięki różnym typom tablic i funkcjom tablicowym PHP oferuje szeroki zakres możliwości manipulacji danymi w tablicach, zgodnie z konkretnymi wymaganiami i strukturą danych.
