@@ -1,0 +1,77 @@
+1. Instrukcja warunkowa "else if":
+
+Składnia instrukcji "else if" w PHP jest następująca:
+
+```php
+if (warunek1) {
+    // Blok kodu do wykonania, jeśli warunek1 jest spełniony
+} elseif (warunek2) {
+    // Blok kodu do wykonania, jeśli warunek2 jest spełniony
+} else {
+    // Blok kodu do wykonania, jeśli żaden z powyższych warunków nie jest spełniony
+}
+```
+
+Instrukcja "else if" pozwala na sprawdzenie kolejnych warunków, jeśli poprzednie warunki nie są spełnione. Jeśli warunek1 jest spełniony, wykonywany jest odpowiedni blok kodu. W przeciwnym razie, jeśli warunek2 jest spełniony, wykonywany jest blok kodu z instrukcją "elseif". Jeśli żaden z powyższych warunków nie jest spełniony, wykonuje się blok kodu wewnątrz instrukcji "else".
+
+Przykład użycia instrukcji "else if" w PHP:
+
+```php
+$ocena = 4;
+
+if ($ocena == 5) {
+    echo "Świetnie!";
+} elseif ($ocena == 4) {
+    echo "Dobrze!";
+} elseif ($ocena == 3) {
+    echo "Mogło być lepiej.";
+} else {
+    echo "Trzeba popracować nad tym.";
+}
+```
+
+W powyższym przykładzie, w zależności od wartości zmiennej `$ocena`, zostanie wyświetlony odpowiedni komunikat.
+
+2. Instrukcja warunkowa "switch":
+
+Składnia instrukcji "switch" w PHP jest następująca:
+
+```php
+switch (wyrażenie) {
+    case wartość1:
+        // Blok kodu do wykonania, gdy wyrażenie jest równe wartość1
+        break;
+    case wartość2:
+        // Blok kodu do wykonania, gdy wyrażenie jest równe wartość2
+        break;
+    // Dodawanie innych przypadków, jeśli konieczne
+    default:
+        // Blok kodu do wykonania, gdy żaden z powyższych przypadków nie pasuje
+}
+```
+
+Instrukcja "switch" umożliwia sprawdzenie różnych wartości wyrażenia i wykonanie odpowiedniego bloku kodu dla pasujących przypadków. Jeśli wyrażenie jest równe wartość1, wykonuje się blok kodu pod "case wartość1". Jeśli wyrażenie jest równe wartość2, wykonuje się blok kodu pod "case wartość2". Jeśli żaden z przypadków nie pasuje, wykonuje się blok kodu wewnątrz "default".
+
+Przykład użycia instrukcji "switch"
+
+ w PHP:
+
+```php
+$dzien_tygodnia = "poniedziałek";
+
+switch ($dzien_tygodnia) {
+    case "poniedziałek":
+        echo "Dzisiaj jest poniedziałek.";
+        break;
+    case "wtorek":
+        echo "Dzisiaj jest wtorek.";
+        break;
+    case "środa":
+        echo "Dzisiaj jest środa.";
+        break;
+    default:
+        echo "Dzisiaj jest inny dzień tygodnia.";
+}
+```
+
+W tym przykładzie, w zależności od wartości zmiennej `$dzien_tygodnia`, zostanie wyświetlony odpowiedni komunikat. Jeśli `$dzien_tygodnia` odpowiada jednemu z przypadków "case", zostanie wykonany odpowiadający blok kodu. Jeśli żaden z przypadków nie pasuje, zostanie wykonany blok kodu w "default".
