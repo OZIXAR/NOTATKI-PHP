@@ -1,0 +1,55 @@
+Składnia instrukcji warunkowej "if" w PHP jest następująca:
+
+```php
+if (warunek) {
+    // Blok kodu do wykonania, jeśli warunek jest spełniony
+} else {
+    // Blok kodu do wykonania, jeśli warunek nie jest spełniony
+}
+```
+
+Oto wyjaśnienie poszczególnych części instrukcji warunkowej "if":
+
+- "warunek" to wyrażenie logiczne, które zostanie ocenione na "true" lub "false". Jeśli warunek jest spełniony (true), blok kodu wewnątrz instrukcji "if" zostanie wykonany. W przeciwnym razie (false), blok kodu wewnątrz instrukcji "else" (opcjonalny) zostanie wykonany.
+
+Przykłady użycia instrukcji warunkowej "if" w PHP:
+
+1. Prosty przykład:
+```php
+$liczba = 10;
+
+if ($liczba > 0) {
+    echo "Liczba jest dodatnia.";
+} else {
+    echo "Liczba jest ujemna lub równa zero.";
+}
+```
+W powyższym przykładzie, jeśli wartość zmiennej `$liczba` jest większa od zera, zostanie wyświetlony komunikat "Liczba jest dodatnia." W przeciwnym razie, gdy wartość zmiennej `$liczba` jest mniejsza lub równa zero, zostanie wyświetlony komunikat "Liczba jest ujemna lub równa zero."
+
+2. Warunek logiczny:
+```php
+$godzina = 15;
+
+if ($godzina < 12 || $godzina === 12) {
+    echo "Dzień dobry!";
+} else {
+    echo "Dobry wieczór!";
+}
+```
+W tym przypadku, jeśli wartość zmiennej `$godzina` jest mniejsza niż 12 lub równa 12, zostanie wyświetlony komunikat "Dzień dobry!". W przeciwnym razie, gdy wartość zmiennej `$godzina` jest większa od 12, zostanie wyświetlony komunikat "Dobry wieczór!".
+
+3. Warunek wielokrotny "elseif":
+```php
+$ocena = 4;
+
+if ($ocena == 5) {
+    echo "Świetnie!";
+} elseif ($ocena == 4) {
+    echo "Dobrze!";
+} elseif ($ocena == 3) {
+    echo "Mogło być lepiej.";
+} else {
+    echo "Trzeba popracować nad tym.";
+}
+```
+W tym przykładzie, w zależności od wartości zmiennej `$ocena`, zostanie wyświetlony odpowiedni komunikat. Jeśli `$ocena` wynosi 5, zostanie wyświetlony komunikat "
